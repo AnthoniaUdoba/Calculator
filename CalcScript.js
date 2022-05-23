@@ -89,6 +89,9 @@ updateDisplay() {
       this.disNum1.toString() + this.disNum2.toString();
   }
 }
+plusMinus.addEventListener("click",  () {
+ 
+  
 clearAll.addEventListener('click', clear => {
   calculator.clear()
   calculator.updateDisplay()
