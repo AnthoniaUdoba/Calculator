@@ -2,82 +2,84 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100v;
+  display: block;
+  color: #f8f8f8;
+  font-size: 30px;
 }
 .container {
   background-color: #000000;
-  padding: 30px;
   margin: 10vh auto 0 auto;
-  width: 90%;
-  height: 700px;
-  max-width: 400px;
-  border-radius: 60px;
-  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  max-width: 380px;
+  border-radius: 30px;
 }
-
+.calculator {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 30px;
+}
+.display-screen {
+  width: auto;
+  height: 80px;
+  text-align: right;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0 6px 24px 6px;
+}
 .display {
   height: 90px;
   display: inline-block;
   scroll-snap-align: end;
 }
-.display-1 {
-  color: white;
-  opacity: 0.5;
-  padding-top: 30px;
+.output {
+  width: auto;
+  height: 32px;
+  margin: 0 6px 24px 6px;
+  text-align: right;
   font-size: 30px;
-  height: 70px;
-  overflow: hidden;
+  margin-bottom: 20px;
 }
-
-.display-2 {
-  padding-top: 20px;
-  font-size: 70px;
-  height: 120px;
-  overflow: hidden;
-}
-.buttons {
-  display: grid;
-  font-size: 30px;
-  font-weight: 600;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  background-color: rgb(0, 0, 0);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-}
-
-.data {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 4.2rem;
-  width: 4.2rem;
+.grey-button,
+.orange-button,
+.button {
+  width: 67px;
+  height: 67px;
+  margin: 6px;
+  float: left;
+  padding: 30px;
   border-radius: 50%;
-  margin: 0.4rem;
+  font-size: 30px;
+  font-weight: bold;
   cursor: pointer;
-}
-.data:hover {
-  background-color: #b9b0b0;
-}
-
-.numbers {
-  background: rgb(65, 65, 65);
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-.operator,
-.equal-to,
-.delete {
-  background-color: rgb(212, 126, 13);
-  color: #ffffff;
-}
-
-.all-clear,
-.plus-minus,
-.modulus {
+.grey-button {
   background-color: rgb(168, 168, 168);
   color: #000000;
+}
+.orange-button {
+  background-color: rgb(216, 124, 4);
+  color: #ffffff;
+}
+.button {
+  background-color: rgb(65, 65, 65);
+}
+.grey-button:hover {
+  background: rgb(166, 166, 166, 0.8);
+}
+.button:hover {
+  background: rgb(51, 51, 51, 0.8);
+}
+
+.orange-button:hover {
+  background: rgba(235, 139, 4, 0.8);
 }
