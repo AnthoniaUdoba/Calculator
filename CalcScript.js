@@ -50,21 +50,3 @@ equaltoBtn.addEventListener("click", () => {
     output.innerHTML = "";
   }
 });
-
-// clearBtn.addEventListener("click", () => {
-//   equalPressed = 0;
-//   displayBtn.textContent = "";
-//   outputBtn.textContent = "";
-// });
-
-// deleteLastBtn.addEventListener("click", () => {
-//   displayBtn.textContent = displayBtn.textContent.toString().slice(0, -1);
-//   display = "";
-// });
-
-// dotBtn.addEventListener("click", function () {
-//   if (equalPressed) {
-//     displayBtn.textContent = "";
-//     equalPressed = false;
-//   }
-// });
